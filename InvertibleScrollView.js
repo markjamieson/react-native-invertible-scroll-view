@@ -74,7 +74,7 @@ let InvertibleScrollView = React.createClass({
     });
 
     if (reverse) {
-      return mapped.reverse();
+      return mapped ? mapped.reverse() : mapped;
     }
 
     return mapped;
